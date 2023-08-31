@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .sidebar-container {
+    @apply  hidden h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid relative bg-zinc-900 bg-opacity-20 backdrop-blur-lg drop-shadow-lg border-slate-400 lg:block;
+  }
+
+  .sidebar {
+    @apply flex items-center mt-2 p-4 rounded-lg cursor-pointer hover:bg-zinc-900 transition-all duration-300 h-[3.5rem];
+  }
+
+  .transition-font {
+    font-size: 0;
+    font-weight: bold;
+    transition: font-size 0.5s ease-in;
+    @apply text-slate-400
+  }
+  
+  .transition-font:nth-child(1) {
+    transition-delay: .2s;
+  }
+
+  .transition-font:nth-child(2) {
+    transition-delay: .4s;
+  }
+
+  .transition-font:nth-child(3) {
+    transition-delay: .6s;
+  }
+
+  .tictactoe-hover:hover > .transition-font {
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
