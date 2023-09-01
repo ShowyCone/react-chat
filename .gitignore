@@ -16,9 +16,6 @@ yarn-error.log*
 # Optional eslint cache
 .eslintcache
 
-# Build directory
-/dist
-
 ### Vite ###
 # See https://github.com/vitejs/vite/blob/main/.gitignore
 
@@ -26,8 +23,6 @@ yarn-error.log*
 /.vscode/
 /docs/.vitepress/cache
 /packages/vite/LICENSE
-dist
-dist-ssr
 explorations
 node_modules
 playground-temp
