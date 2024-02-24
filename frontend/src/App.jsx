@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar'
 import Chat from './components/Chat'
 import GameRoom from './components/GameRoom'
 
-const socket = io('/')
+const socket = io('https://react-chat-back-l0oy.onrender.com')
 
 export const MyContext = createContext()
 
@@ -64,7 +64,6 @@ function App() {
       />
 
       {/* <GameRoom /> */}
-
     </div>
   )
 }
